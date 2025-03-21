@@ -144,7 +144,7 @@ TextureImporter:
         width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,6 +152,48 @@ TextureImporter:
       bones: []
       spriteID: f4e299c198069bb4581b2724ec3f4c0d
       internalID: -1839926507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Icons_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff156b8d909ae784b9d9a0e934e34bb2
+      internalID: -1487089834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Icons_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13eb18004b8d9e344b7ab4baf8bea448
+      internalID: 519413378
       vertices: []
       indices: 
       edges: []
@@ -168,6 +210,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       All Icons_0: -1839926507
+      All Icons_1: -1487089834
+      All Icons_2: 519413378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
