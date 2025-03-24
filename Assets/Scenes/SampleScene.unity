@@ -5201,6 +5201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bed87334bac184ab7bee825dafc4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &1770037955
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,6 +5392,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be31e42258857864e836d3138542a597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAttackTxt: {fileID: 0}
+  playerDefenseTxt: {fileID: 0}
+  playerHealthTxt: {fileID: 0}
+  playerCriticalTxt: {fileID: 0}
 --- !u!1 &1849847416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5645,6 +5650,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77dc0d1be968de48b42065d7018a53d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons: {fileID: 1608569217}
+  returnBtn: {fileID: 1095071801}
+  statusBtn: {fileID: 1685337905}
+  inventoryBtn: {fileID: 960699438}
+  playerNameTxt: {fileID: 1944527756}
+  playerLevelTxt: {fileID: 914317835}
+  playerDescriptionTxt: {fileID: 215384424}
+  playerExpTxt: {fileID: 686906141}
+  playerExpImage: {fileID: 1675495952}
+  goldTxt: {fileID: 386154975}
 --- !u!1 &1864260577
 GameObject:
   m_ObjectHideFlags: 0

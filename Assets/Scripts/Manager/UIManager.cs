@@ -13,6 +13,10 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     UIBase uiInventory;
 
+    public UIBase UIMain { get { return uiMain; } }
+    public UIBase UIStatus { get { return uiStatus; } }
+    public UIBase UIInventory { get { return uiInventory; } }
+
     enum UISTATE
     {
         MAIN,
