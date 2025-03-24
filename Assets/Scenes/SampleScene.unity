@@ -1777,6 +1777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baec536d86fbbc740a0a863e1595a61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 1012642634}
 --- !u!4 &564711708
 Transform:
   m_ObjectHideFlags: 0
@@ -3660,6 +3661,7 @@ GameObject:
   - component: {fileID: 1012642631}
   - component: {fileID: 1012642633}
   - component: {fileID: 1012642632}
+  - component: {fileID: 1012642634}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -3724,6 +3726,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012642630}
   m_CullTransparentMesh: 1
+--- !u!114 &1012642634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012642630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397f9ecf0e6eb5f45aa71e0ce0c24a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Chicken
+  playerDescription: "\uC774 \uCE58\uD0A8\uC740 \uB9DB\uC788\uC2B5\uB2C8\uB2E4."
+  attack: 15
+  defense: 25
+  maxHealth: 35
+  health: 35
+  critical: 20
+  gold: 2000
+  exp: 0
+  level: 1
 --- !u!1 &1053124821
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,7 +5225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bed87334bac184ab7bee825dafc4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
+  inventory: {fileID: 965268009}
 --- !u!1 &1770037955
 GameObject:
   m_ObjectHideFlags: 0
@@ -5392,10 +5416,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be31e42258857864e836d3138542a597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAttackTxt: {fileID: 0}
-  playerDefenseTxt: {fileID: 0}
-  playerHealthTxt: {fileID: 0}
-  playerCriticalTxt: {fileID: 0}
+  playerAttackTxt: {fileID: 2035774888}
+  playerDefenseTxt: {fileID: 1133673355}
+  playerHealthTxt: {fileID: 1438709490}
+  playerCriticalTxt: {fileID: 2044283942}
 --- !u!1 &1849847416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5655,8 +5679,8 @@ MonoBehaviour:
   statusBtn: {fileID: 1685337905}
   inventoryBtn: {fileID: 960699438}
   playerNameTxt: {fileID: 1944527756}
-  playerLevelTxt: {fileID: 914317835}
   playerDescriptionTxt: {fileID: 215384424}
+  playerLevelTxt: {fileID: 914317835}
   playerExpTxt: {fileID: 686906141}
   playerExpImage: {fileID: 1675495952}
   goldTxt: {fileID: 386154975}

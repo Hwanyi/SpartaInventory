@@ -15,8 +15,8 @@ public class UIMainMenu : UIBase
     public Button inventoryBtn;
 
     public TextMeshProUGUI playerNameTxt;
-    public TextMeshProUGUI playerLevelTxt;
     public TextMeshProUGUI playerDescriptionTxt;
+    public TextMeshProUGUI playerLevelTxt;
     public TextMeshProUGUI playerExpTxt;
     public Image playerExpImage;
 
@@ -28,6 +28,8 @@ public class UIMainMenu : UIBase
         returnBtn.onClick.AddListener(OpenMainMenu);
         statusBtn.onClick.AddListener(OpenStatus);
         inventoryBtn.onClick.AddListener(OpenInventory);
+
+        SetUI();
     }
 
     public void OpenMainMenu()
@@ -50,5 +52,16 @@ public class UIMainMenu : UIBase
         buttons.SetActive(false);
         returnBtn.gameObject.SetActive(true);
         manager.UIInventory.gameObject.SetActive(true);
+    }
+
+    public void SetUI()
+    {
+        Character info = GameManager.Instance.CharacterInfo;
+        playerNameTxt.text = info.PlayerName;
+        playerDescriptionTxt.text = info.PlayerDescription;
+        playerLevelTxt.text = $"LV. {info.Level}";
+        playerExpTxt.text = $"{info.Exp} / {info.maxExp[info.Level]}";
+        playerExpImage.fillAmount = (float)info.Exp / info.maxExp[info.Level];
+        goldTxt.text = info.Gold.ToString("N0");
     }
 }

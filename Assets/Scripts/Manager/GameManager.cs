@@ -5,6 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
+    private Character character;
+    public Character CharacterInfo
+    {
+        get { return character; }
+    }
+
     public static GameManager Instance
     {
         get
@@ -28,5 +34,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        character = gameObject.GetComponent<Character>();
     }
 }
