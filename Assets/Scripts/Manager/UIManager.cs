@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager instance;
+
     [SerializeField]
     UIBase uiMain;
     [SerializeField]
@@ -11,4 +13,22 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     UIBase uiInventory;
 
+    enum UISTATE
+    {
+        MAIN,
+        STATUS,
+        INVENTORY
+    };
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if(instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

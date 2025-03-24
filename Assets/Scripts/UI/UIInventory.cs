@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class UIInventory : UIBase
 {
-    
+    public GameObject inventory;
 }
