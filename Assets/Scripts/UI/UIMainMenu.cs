@@ -30,6 +30,7 @@ public class UIMainMenu : UIBase
         inventoryBtn.onClick.AddListener(OpenInventory);
 
         SetUI();
+        OpenMainMenu();
     }
 
     public void OpenMainMenu()
