@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class UIInventory : UIBase
 {
-    public GameObject inventory;
-
     public GameObject uiSlot;
 
-    private UISlot inventorySlots;
+    private List<UISlot> inventorySlots;
 
     public Transform inventoryRoot;
 
@@ -32,6 +31,7 @@ public class UIInventory : UIBase
             {
                 temp = Instantiate(uiSlot, inventoryRoot);
                 temp.transform.localPosition = new Vector3(10f + slotGap * j, -20f - slotGap * i);
+                inventorySlots.Add(temp.GetComponent<UISlot>());
             }
         }
     }
