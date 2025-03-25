@@ -16,4 +16,5 @@ public class Item : ScriptableObject
     public float critical;
 
     public bool isEquip = false;
+
 }

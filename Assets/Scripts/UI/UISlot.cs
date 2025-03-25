@@ -12,8 +12,15 @@ public class UISlot : MonoBehaviour
 
     public void SetItem()
     {
-        itemIcon.sprite = item.image;
-        itemIcon.enabled = true;
+        if (item != null)
+        {
+            itemIcon.sprite = item.image;
+            itemIcon.enabled = true;
+        } 
+        else
+        {
+            itemIcon.enabled = false;
+        }
     }
 
     public void RefreshUI()

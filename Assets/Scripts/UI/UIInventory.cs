@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIInventory : UIBase
 {
@@ -40,5 +40,10 @@ public class UIInventory : UIBase
             }
         }
 
+        for (int i = 0; i < GameManager.Instance.CharacterInfo.Inventory.Count; i++)
+        {
+            inventorySlots[i].item = GameManager.Instance.CharacterInfo.Inventory[i];
+            inventorySlots[i].SetItem();
+        }
     }
 }
