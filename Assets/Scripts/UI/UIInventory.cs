@@ -13,7 +13,7 @@ public class UIInventory : UIBase
 
     public float slotGap = 45f;
 
-    private int slotCount = 0;
+    //private int slotCount = 0;
     private int maxSlotCount = 120;
 
     private void Awake()
@@ -39,5 +39,6 @@ public class UIInventory : UIBase
                 inventorySlots.Add(temp.GetComponent<UISlot>());
             }
         }
+
     }
 }

@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public List<Item> itemList;
+
     private void Awake()
     {
         if (instance == null)
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        character = new Character(new List<Item>());
+        character = new Character(itemList);
+
     }
 }

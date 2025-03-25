@@ -92,7 +92,8 @@ public class Character
 
     public readonly int[] maxExp = new int[MAXLV] { 0, 15, 30, 45, 60, 75, 90, 100, 110, 120};
 
-    List<Item> inventory; 
+    private List<Item> inventory; 
+    public List<Item> Inventory { get { return inventory; } }
 
     public Character(List<Item> inventory)
     {
@@ -108,4 +109,28 @@ public class Character
         exp = 0;
         level = 1;
     }
+
+    public void AddItem(Item item)
+    {
+        inventory.Add(item);
+    }
+
+    public void EquipItem(Item item)
+    {
+        item.isEquip = true;
+        attack += item.attack;
+        defense += item.defense;
+        maxHealth += item.maxHp;
+        critical += item.critical;
+    }
+
+    public void UnEquipItem(Item item)
+    {
+        item.isEquip = false;
+        attack -= item.attack;
+        defense -= item.defense;
+        maxHealth -= item.maxHp;
+        critical -= item.critical;
+    }
+
 }
