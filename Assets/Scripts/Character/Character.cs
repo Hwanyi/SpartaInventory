@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Character
 {
     [SerializeField]
     private string playerName;
@@ -91,4 +91,21 @@ public class Character : MonoBehaviour
     const int MAXLV = 10;
 
     public readonly int[] maxExp = new int[MAXLV] { 0, 15, 30, 45, 60, 75, 90, 100, 110, 120};
+
+    List<Item> inventory; 
+
+    public Character(List<Item> inventory)
+    {
+        this.inventory = inventory;
+        playerName = "Chichken";
+        playerDescription = "이 치킨은 맛있습니다.";
+        attack = 15f;
+        defense = 25f;
+        maxHealth = 35f;
+        health = maxHealth;
+        critical = 20f;
+        gold = 2000;
+        exp = 0;
+        level = 1;
+    }
 }

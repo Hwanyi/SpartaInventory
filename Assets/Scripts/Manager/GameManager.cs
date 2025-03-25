@@ -35,6 +35,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        character = gameObject.GetComponent<Character>();
+        character = new Character(new List<Item>());
     }
 }

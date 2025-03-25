@@ -1437,7 +1437,6 @@ GameObject:
   m_Component:
   - component: {fileID: 564711708}
   - component: {fileID: 564711707}
-  - component: {fileID: 564711709}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1472,28 +1471,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &564711709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564711706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 397f9ecf0e6eb5f45aa71e0ce0c24a7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: Chicken
-  playerDescription: "\uC774 \uCE58\uD0A8\uC740 \uB9DB\uC788\uC2B5\uB2C8\uB2E4."
-  attack: 15
-  defense: 25
-  maxHealth: 35
-  health: 35
-  critical: 20
-  gold: 2000
-  exp: 0
-  level: 1
 --- !u!1 &634219492
 GameObject:
   m_ObjectHideFlags: 0
@@ -3698,7 +3675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bed87334bac184ab7bee825dafc4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
   uiSlot: {fileID: 3222097938924662514, guid: 71c3136015d33fd499a239a67d16f711, type: 3}
   inventoryRoot: {fileID: 532441705}
   slotGap: 45

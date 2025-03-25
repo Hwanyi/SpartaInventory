@@ -16,6 +16,11 @@ public class UIInventory : UIBase
     private int slotCount = 0;
     private int maxSlotCount = 120;
 
+    private void Awake()
+    {
+        inventorySlots = new List<UISlot>();
+    }
+
     private void Start()
     {
         InitInventoryUI();
