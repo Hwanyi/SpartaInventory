@@ -47,9 +47,4 @@ public class UIInventory : UIBase
             inventorySlots[i].SetItem();
         }
     }
-
-    public void SetEquipIcon(int index)
-    {
-
-    }
 }
