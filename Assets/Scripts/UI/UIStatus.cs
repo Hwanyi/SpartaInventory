@@ -15,12 +15,17 @@ public class UIStatus : UIBase
         SetUI();
     }
 
-    void SetUI()
+    public void SetUI()
     {
         Character info = GameManager.Instance.CharacterInfo;
         playerAttackTxt.text = info.Attack.ToString();
         playerDefenseTxt.text = info.Defense.ToString();
         playerHealthTxt.text = info.Health.ToString();
         playerCriticalTxt.text = info.Critical.ToString();
+    }
+
+    public override void RefreshUI()
+    {
+        SetUI();
     }
 }

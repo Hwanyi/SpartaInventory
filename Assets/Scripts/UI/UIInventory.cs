@@ -37,6 +37,7 @@ public class UIInventory : UIBase
                 temp = Instantiate(uiSlot, inventoryRoot);
                 temp.transform.localPosition = new Vector3(10f + slotGap * j, -20f - slotGap * i);
                 inventorySlots.Add(temp.GetComponent<UISlot>());
+                inventorySlots[i].index = i;
             }
         }
 
@@ -45,5 +46,10 @@ public class UIInventory : UIBase
             inventorySlots[i].item = GameManager.Instance.CharacterInfo.Inventory[i];
             inventorySlots[i].SetItem();
         }
+    }
+
+    public void SetEquipIcon(int index)
+    {
+
     }
 }

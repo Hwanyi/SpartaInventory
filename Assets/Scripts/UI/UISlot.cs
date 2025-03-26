@@ -9,6 +9,8 @@ public class UISlot : MonoBehaviour
     private Image itemIcon;
 
     public Item item;
+    public GameObject equipIcon;
+    public int index;
 
     public void SetItem()
     {
@@ -26,5 +28,25 @@ public class UISlot : MonoBehaviour
     public void RefreshUI()
     {
         itemIcon.enabled = false;
+    }
+
+    public void Onclicked()
+    {
+        if (item == null) return;
+
+        if(item.isEquip)
+        {
+            item.isEquip = false;
+            GameManager.Instance.CharacterInfo.UnEquipItem(item);
+            equipIcon.SetActive(false);
+        }
+        else
+        {
+            item.isEquip = true;
+            GameManager.Instance.CharacterInfo.EquipItem(item);
+            equipIcon.SetActive(true);
+        }
+
+        UIManager.instance.UIStatus.RefreshUI();
     }
 }
